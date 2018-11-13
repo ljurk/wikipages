@@ -1,1 +1,3 @@
 [[linux:addNewLetsEncryptCert]]
+
+[[linux:addNewHostToNoip]]

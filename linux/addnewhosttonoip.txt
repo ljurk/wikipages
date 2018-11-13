@@ -1,0 +1,4 @@
+<code>
+cd /etc/noip/noip-2.1.9-1
+sudo make install
+</code>
