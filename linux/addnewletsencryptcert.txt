@@ -1,3 +1,5 @@
-<code>
+<markdown>
+```
 sudo certbot --apache
-</code>
+```
+</markdown>
