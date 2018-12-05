@@ -1,6 +1,7 @@
 ---
-title: l2know3
+title: l2know3 <img src="smile.png" alt="drawing" width="100"/>
 ---
+
 # linux
 
 [README](README)
