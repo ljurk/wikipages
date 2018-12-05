@@ -1,7 +1,6 @@
 ---
 title: Readme
 ---
-[303.ddns.net](https://303.ddns.net)
 
 to use vimwiki and its links i have to get the requeste URL without .html
 

@@ -8,8 +8,8 @@ title: l2know3 <img src="smile.png" alt="drawing" width="100"/>
 
 [Add new Host to noip nuc](addnewhosttonoip)
 
-[addnewletsencryptcert](addnewletsencryptcert)
+[Add new Certificate To certbot](addnewletsencryptcert)
 
-[vimwikiwebsite](vimwikiwebsite)
+[How to manage your website content with vimwiki and markdown](vimwikiwebsite)
 
 # Synth
