@@ -38,18 +38,20 @@ html {
 body {
     border-radius: 20px;
 /*    font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif*/;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.7;
     padding: .125em 1em 0.5em 1em;
     margin: auto;
     width: 1000px;
     font-size: 16px;
     color: #ddd;
-    background: black;
+    background: #5F021F;
+    font-family: monospace, monospace;
 }
 
 a {
-    color: teal;
+    color: #336699 ;
+    font-weight: bold;
 }
 
 a:hover {
@@ -223,7 +225,7 @@ dl:hover dd:last-of-type {
     display: block;
 }
 pre code {
-    background-color: #eee;
+    background-color: grey;
     border: 1px solid #999;
     display: block;
     padding: 20px;
