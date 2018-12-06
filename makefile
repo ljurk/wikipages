@@ -1,8 +1,35 @@
-compile:
-	pandoc addnewletsencryptcert.md -s -c style.css -o addnewletsencryptcert.html
-	pandoc addnewhosttonoip.md -s -c style.css -o addnewhosttonoip.html
-	pandoc index.md -s -c style.css --toc -o index.html
-	pandoc README.md -s -c style.css  -o README.html
-	pandoc vimwikiwebsite.md -s -c style.css  -o vimwikiwebsite.html
+# Makefile
+# original: https://gist.github.com/kristopherjohnson/7466917 
+# <http://johnmacfarlane.net/pandoc/>
+#
+# Run "make" (or "make all") to convert to all other formats
+#
+# Run "make clean" to delete converted files
+
+# Convert all files in this directory that have a .md suffix
+SOURCE_DOCS := $(wildcard *.md)
+
+EXPORTED_DOCS=\
+ $(SOURCE_DOCS:.md=.html) 
+
+RM=/bin/rm
+
+PANDOC=pandoc
+
+PANDOC_OPTIONS=--smart --standalone
+
+PANDOC_HTML_OPTIONS=--to html5 -c style.css
+
+# Pattern-matching Rules
+
+%.html : %.md
+	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) -o $@ $<
+
+# Targets and dependencies
+
+.PHONY: all clean
+
+all : $(EXPORTED_DOCS)
+
 clean:
-	rm addnewletsencryptcert.html index.html addnewhosttonoip.html README.html vimwikiwebsite.html
+	- $(RM) $(EXPORTED_DOCS)
