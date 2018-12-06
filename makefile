@@ -16,7 +16,7 @@ RM=/bin/rm
 
 PANDOC=pandoc
 
-PANDOC_OPTIONS=--smart --standalone
+PANDOC_OPTIONS=--smart --standalone --toc
 
 PANDOC_HTML_OPTIONS=--to html5 -c style.css
 

@@ -1,9 +1,0 @@
----
-title: test
----
-
-===Linux===
-[[addnewletsencryptcert|Add new Certificate to Let's Encrypt ]]
-
-[[addnewhosttonoip|Add New Host to noip-nuc]]
-[[newsite]]

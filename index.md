@@ -12,4 +12,10 @@ title: l2know3 <img src="smile.png" alt="drawing" width="100"/>
 
 [How to manage your website content with vimwiki and markdown](vimwikiwebsite)
 
-# Synth
+# synth
+
+
+# about
+
+* [GitHub](https://github.com/ljurk)
+* [Soundcloud](https://soundcloud.com/lukn23)
