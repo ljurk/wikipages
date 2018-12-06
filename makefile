@@ -11,7 +11,7 @@ SOURCE_DOCS := $(wildcard *.md)
 
 EXPORTED_DOCS=$(SOURCE_DOCS:.md=.html)
 
-RM=rm
+RM=rm -f
 
 PANDOC=pandoc
 
