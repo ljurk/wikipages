@@ -9,10 +9,9 @@
 # Convert all files in this directory that have a .md suffix
 SOURCE_DOCS := $(wildcard *.md)
 
-EXPORTED_DOCS=\
- $(SOURCE_DOCS:.md=.html) 
+EXPORTED_DOCS=$(SOURCE_DOCS:.md=.html)
 
-RM=/bin/rm
+RM=rm
 
 PANDOC=pandoc
 
@@ -27,9 +26,11 @@ PANDOC_HTML_OPTIONS=--to html5 -c style.css
 
 # Targets and dependencies
 
-.PHONY: all clean
+.PHONY: all clean compile
 
-all : $(EXPORTED_DOCS)
+all : clean compile
+
+compile : $(EXPORTED_DOCS)
 
 clean:
 	- $(RM) $(EXPORTED_DOCS)
