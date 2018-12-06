@@ -1,7 +1,9 @@
 ---
-title: Readme
+title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="100"/></a>
 ---
 
+
+# README
 to use vimwiki and its links i have to get the requeste URL without .html
 
     #if foo requested, return foo.html contents

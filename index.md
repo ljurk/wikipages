@@ -1,5 +1,5 @@
 ---
-title: l2know3 <img src="smile.png" alt="drawing" width="100"/>
+title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="100"/></a>
 ---
 
 # linux
@@ -14,6 +14,7 @@ title: l2know3 <img src="smile.png" alt="drawing" width="100"/>
 
 # synth
 
+[Arduino MIDI-Sequencer](arduseq)
 
 # about
 
