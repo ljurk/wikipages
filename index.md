@@ -1,6 +1,7 @@
 ---
 title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="100"/></a>
 ---
+</br>
 
 # linux
 
@@ -10,9 +11,17 @@ title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="
 
 [Add new Certificate To certbot](addnewletsencryptcert)
 
+<br/>
+<br/>
+<br/>
+
 # synth
 
 [Arduino MIDI-Sequencer](arduseq)
+
+<br/>
+<br/>
+<br/>
 
 # about
 
