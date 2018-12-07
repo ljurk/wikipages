@@ -4,13 +4,11 @@ title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="
 
 # linux
 
-[README](README)
+[How to manage your website content with vimwiki and markdown](vimwikiwebsite)
 
 [Add new Host to noip nuc](addnewhosttonoip)
 
 [Add new Certificate To certbot](addnewletsencryptcert)
-
-[How to manage your website content with vimwiki and markdown](vimwikiwebsite)
 
 # synth
 

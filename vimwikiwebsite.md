@@ -37,7 +37,7 @@ In vimwiki you generate links by pressing enter on a word(for example: **about**
 
 Save your file and then press the bakckspace to go back to your **index.md**
 
-when compiling pandoc creates to files **index.html** and **about.html**
+when compiling pandoc creates two files: **index.html** and **about.html**
 
     server> ~ / var / www / html > make
     rm -f index.html about.html
