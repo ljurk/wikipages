@@ -11,6 +11,8 @@ title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="
 
 [Add new Certificate To certbot](addnewletsencryptcert)
 
+[hidegrubmenu](hidegrubmenu)
+
 <br/>
 <br/>
 <br/>
