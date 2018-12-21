@@ -13,6 +13,7 @@ title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="
 
 [hidegrubmenu](hidegrubmenu)
 
+[platformioAndLinux](platformioAndLinux)
 <br/>
 <br/>
 <br/>
