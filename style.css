@@ -20,7 +20,7 @@ nav li a {
 
 /* Change the link color to #111 (black) on hover */
 nav li a:hover {
-    color: green;
+    color: #5F021F;
     font-weight: bold;
     background-color: #111;
 }

@@ -20,8 +20,11 @@ title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="
 
 # synth
 
+[Raspberry Pi as a USB-MIDI-Host](raspiUsbMidiHost)
+
 [Arduino MIDI-Sequencer](arduseq)
 
+[midi2cv](midi2cv)
 <br/>
 <br/>
 <br/>
