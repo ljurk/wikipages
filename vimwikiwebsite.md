@@ -12,6 +12,10 @@ install vimwiki plugin
         Plug 'vimwiki/vimwiki'
     call plug#end()
 
+add this to your *.vimrc* to add .md files to vimwiki filetypes
+
+    " filetypes for vimwiki
+    let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown',     '.mdown': 'markdown', 'txt' : '.txt'}
 
 install pandoc
 
@@ -37,7 +41,7 @@ In vimwiki you generate links by pressing enter on a word(for example: **about**
 
     Psst
 
-Save your file and then press the bakckspace to go back to your **index.md**
+Save your file and then press the backspace to go back to your **index.md**
 
 when compiling pandoc creates two files: **index.html** and **about.html**
 
