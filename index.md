@@ -16,6 +16,9 @@ title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="
 [hidegrubmenu](hidegrubmenu)
 
 [platformioAndLinux](platformioAndLinux)
+
+[partman](partman)
+
 <br/>
 <br/>
 <br/>
@@ -27,6 +30,7 @@ title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="
 [Arduino MIDI-Sequencer](arduseq)
 
 [midi2cv](midi2cv)
+
 <br/>
 <br/>
 <br/>
