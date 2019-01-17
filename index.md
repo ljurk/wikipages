@@ -3,6 +3,10 @@ title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="
 ---
 </br>
 
+# tools
+
+[Partman](pm)
+
 # linux
 
 [vmrc](vmrc)
