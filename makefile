@@ -30,12 +30,12 @@ PANDOC_TOC = --toc
 # Pattern-matching Rules
 %.html : %.md
 	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) -o $@ $<
-	mv $@ doc/
+	mv $@ docs/
 
 # compile it with Table of Contents
 index.html : index.md
 	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) $(PANDOC_TOC) -o $@ $<
-	mv $@ doc/
+	mv $@ docs/
 
 # Targets and dependencies
 .DEFAULT_GOAL := all
@@ -44,6 +44,10 @@ index.html : index.md
 all : clean compile
 
 compile : $(EXPORTED_DOCS) $(EXPORTED_INDEX)
+
+io : compile
+	find docs/ -type f -name '*.html' -print0 | xargs -0 sed -i 's#303.ddns.net#ljurk.github.io/wikipages#g'
+
 
 clean:
 	- $(RM) $(EXPORTED_DOCS) $(EXPORTED_INDEX)
