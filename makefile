@@ -21,7 +21,7 @@ RM = rm -f
 
 PANDOC = pandoc
 
-PANDOC_OPTIONS = --smart --standalone #--toc
+PANDOC_OPTIONS = --standalone #--toc
 
 PANDOC_HTML_OPTIONS = --to html5 -c style.css
 
@@ -30,10 +30,12 @@ PANDOC_TOC = --toc
 # Pattern-matching Rules
 %.html : %.md
 	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) -o $@ $<
+	mv $@ doc/
 
 # compile it with Table of Contents
 index.html : index.md
 	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) $(PANDOC_TOC) -o $@ $<
+	mv $@ doc/
 
 # Targets and dependencies
 .DEFAULT_GOAL := all

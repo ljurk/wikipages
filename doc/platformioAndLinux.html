@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>platformioAndLinux</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title"><a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="100"/></a></h1>
+</header>
+<h1 id="how-to-solve-permission-error-when-uploading-to-arduino-through-platformio-cli">How to solve permission error when uploading to Arduino through Platformio CLI</h1>
+<p>if</p>
+<pre><code>platformio run --target upload</code></pre>
+<p>spits out the error</p>
+<pre><code>could not open port: Permission denied</code></pre>
+<p>you have to join the group owning the port</p>
+<pre><code>ls -lha /dev/ttyUSB0
+#output
+    crw-rw---- 1 root uucp 188, 0 21. Dez 16:50 /dev/ttyUSB0
+#join the group
+sudo usermod -a -G uucp ljurk</code></pre>
+</body>
+</html>

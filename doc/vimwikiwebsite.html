@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>vimwikiwebsite</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title"><a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="100"/></a></h1>
+</header>
+<h1 id="how-to-manage-your-website-content-with-vimwiki-and-markdown">How to manage your website content with vimwiki and markdown</h1>
+<p>You can see the Result here: <a href="https://303.ddns.net">https://303.ddns.net</a></p>
+<p>install vimwiki plugin</p>
+<pre><code>call plug#begin(&#39;~/.vim/plugged&#39;)
+    Plug &#39;vimwiki/vimwiki&#39;
+call plug#end()</code></pre>
+<p>add this to your <em>.vimrc</em> to add .md files to vimwiki filetypes</p>
+<pre><code>&quot; filetypes for vimwiki
+let g:vimwiki_ext2syntax = {&#39;.Rmd&#39;: &#39;markdown&#39;, &#39;.rmd&#39;: &#39;markdown&#39;,&#39;.md&#39;: &#39;markdown&#39;, &#39;.markdown&#39;: &#39;markdown&#39;,     &#39;.mdown&#39;: &#39;markdown&#39;, &#39;txt&#39; : &#39;.txt&#39;}</code></pre>
+<p>install pandoc</p>
+<pre><code>pacman -S pandoc</code></pre>
+<p>get makefile and style.css from <a href="https://github.com/ljurk/wikipages">github</a></p>
+<p>start by editing your <strong>index.md</strong>(idealy in webroot)</p>
+<pre><code>---
+title: 303
+---
+
+# linux
+
+about</code></pre>
+<p>In vimwiki you generate links by pressing enter on a word(for example: <strong>about</strong>) to generate the <strong>about.md</strong> file, if you press enter again you access this file and edit it</p>
+<pre><code>---
+title: 303
+---
+
+Psst</code></pre>
+<p>Save your file and then press the backspace to go back to your <strong>index.md</strong></p>
+<p>when compiling pandoc creates two files: <strong>index.html</strong> and <strong>about.html</strong></p>
+<pre><code>server&gt; ~ / var / www / html &gt; make
+rm -f index.html about.html
+pandoc --smart --standalone style.css -o index.html index.md
+pandoc --smart --standalone style.css -o about.html about.md</code></pre>
+<p>There is one problem: pandoc will translate the link in the index to <strong>./about</strong> You can’t access your <strong>about</strong> site, because your file is named <strong>about.html</strong></p>
+<p>That’s why some apache magic is needed. Add this to your virtual-host config</p>
+<pre><code>#if foo requested, return foo.html contents
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+#redirect foo.html to foo
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+RewriteRule ^(.+)\.html$ $1 [R,L]</code></pre>
+</body>
+</html>
