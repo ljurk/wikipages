@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="style.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title"><a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="100"/></a></h1>
+</header>
+<h1 id="initial-raspberry-pi-installation">Initial Raspberry Pi Installation</h1>
+<p>get sd card path</p>
+<pre><code>lsblk</code></pre>
+<p>Download image from raspberrypi.org</p>
+<p>extract it</p>
+<pre><code>unzip 2018-11-13-raspbian-stretch.zip</code></pre>
+<p>burn it to sd replace /dev/sdX with the sd card path</p>
+<pre><code>dd bs=4M if=2018-11-13-raspbian-stretch.img of=/dev/sdX conv=fsync</code></pre>
+<p>place a file called ssh in the boot drive of the sd card</p>
+<p>connect pi to network and power</p>
+<p>list network devices to get ip address</p>
+<pre><code>nmap -sn 192.168.1.0/24</code></pre>
+<p>ssh into your fresh pi</p>
+<pre><code>ssh pi@TOUR_PIS_IP_ADDRESS</code></pre>
+</body>
+</html>
