@@ -1,7 +1,3 @@
----
-title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="100"/></a>
----
-
 edit **/etc/default/grub**
 uncomment this line:
 

@@ -1,7 +1,3 @@
----
-title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="100"/></a>
----
-
 # How to solve permission error when uploading to Arduino through Platformio CLI
 
 

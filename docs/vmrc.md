@@ -1,7 +1,3 @@
----
-title: <a href="https://303.ddns.net"><img src="smile.png" alt="drawing" width="100"/></a>
----
-
 How to get VMware-Remote-Console running under manjaro
 
     git clone https://aur.archlinux.org/ncurses5-compat-libs.git

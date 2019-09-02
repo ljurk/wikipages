@@ -1,3 +1,16 @@
-site_name: My Docs
+site_name: '303'
+repo_name: 'ljurk/wikipages'
+repo_url: 'https://github.com/ljurk/wikipages/tree/mkdocs'
 theme:
   name: 'material'
+  logo: 'img/smile.png'
+  favicon: 'img/smile.png'
+  palette:
+    primary: 'Deep Purple'
+    accent: 'Green'
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/ljurk'
+    - type: 'soundcloud'
+      link: 'https://soundcloud.com/lukn23'
