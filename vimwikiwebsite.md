@@ -1,6 +1,6 @@
 # How to manage your website content with vimwiki and markdown
 
-You can see the Result here: [https://303.ddns.net](https://303.ddns.net)
+You can see the Result here: [https://ljurk.github.io](https://ljurk.github.io)
 
 install vimwiki plugin
 
@@ -8,7 +8,7 @@ install vimwiki plugin
         Plug 'vimwiki/vimwiki'
     call plug#end()
 
-add this to your *.vimrc* to add .md files to vimwiki filetypes
+To add .md files to vimwiki filetypes add this to your `~/.vimrc`:
 
     " filetypes for vimwiki
     let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown',     '.mdown': 'markdown', 'txt' : '.txt'}
