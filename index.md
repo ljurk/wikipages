@@ -2,6 +2,14 @@
 
 [dotfiles](/dot)
 
+[midi2cv](/midi2cv)
+
+[Arduino MIDI-Sequencer](/ArduSequencer)
+
+[trello client for rofi/dmenu](/dmenutrello)
+
+[Part Mangament Portal for electric components](/partman)
+
 
 # linux
 
@@ -22,8 +30,6 @@
 # synth
 
 [Raspberry Pi as a USB-MIDI-Host](raspiUsbMidiHost)
-
-[Arduino MIDI-Sequencer](arduseq)
 
 [midi2cv](midi2cv)
 
