@@ -1,6 +1,6 @@
-# tools
+# projects
 
-[Partman](pm)
+[dotfiles](/dot)
 
 
 # linux
