@@ -13,6 +13,8 @@
 
 # linux
 
+[bash](bash)
+
 [vmrc](vmrc)
 
 [How to manage your website content with vimwiki and markdown](vimwikiwebsite)
