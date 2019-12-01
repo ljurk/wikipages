@@ -35,6 +35,8 @@
 
 [midi2cv](midi2cv)
 
+[midiConfig](midiConfig)
+
 
 # about
 
