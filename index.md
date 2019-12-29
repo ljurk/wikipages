@@ -38,6 +38,7 @@
 
 [midiConfig](midiConfig)
 
+[patchbayLayout](patchbayLayout)
 
 # random
 

@@ -89,4 +89,3 @@ because the pulse2 has a lots of midi implementations I have a few tracks assign
 | #24: lfo1 speed | #25: lfo1 shape | #79: arp active | #80: arp range |
 | ------------------- | ------------------- | ------------------- | ------------------ |
 | #26: lfo2 speed | #27: lfo2 delay | #82: arp clock  | #85: arp swing |
-
