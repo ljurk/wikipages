@@ -10,8 +10,8 @@
 | 8  | **mfb503**    | mixer8               |      |
 | 9  | AirbaseMainL  | mixer9               |      |
 | 10 | AirbaseMainR  | mixer10              |      |
-| 11 | digitaktL     | mixer11              |      |
-| 12 | digitaktR     | mixer12              |      |
+| 11 | **digitaktL** | mixer11              |      |
+| 12 | **digitaktR** | mixer12              |      |
 | 13 | mam fb383     | distortionIn         |      |
 | 14 | distortionOut | delayIn              |      |
 | 15 | delayOut      | comp1in              |      |
@@ -23,4 +23,3 @@
 | 21 | -             | filterbankFmIn       |      |
 | 22 | -             | filterbankAmIn       |      |
 | 23 | -             | -                    |      |
-| 24 | -             | -                    |      |
