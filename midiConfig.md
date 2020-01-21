@@ -10,7 +10,7 @@ Some tables in digitakt style for controlling Airbase, Mbase and modular stuff
 Note: 36(C1)
 
 | #100: Tune      | #101: Pitch | #106: Attack | #102: Decay |
-| ------------------- | --------------- | ---------------- | --------------- |
+| --------------- | ----------- | ------------ | ----------- |
 | #103: Harmonics | #105: Noise | #107: EQ     | #115: Level |
 
 ### clap
@@ -18,8 +18,8 @@ Note: 36(C1)
 Note: 39(D#1)
 
 | #26: Tune | #27: Attack | #28: Peak-time | #29: Decay |
-| ------------- | --------------- | ------------------ | -------------- |
-|               |                 |                    | #30: Level |
+| --------- | ----------- | -------------- | ---------- |
+|           |             |                | #30: Level |
 
 ### hihat
 
@@ -30,7 +30,7 @@ Note:
 - Closed: 42(F#1)
 
 | #19: CH Attack | #20: CH Peak-Time | #21: CH Decay | #18: Tune  |
-| ------------------ | --------------------- | ----------------- | -------------- |
+| -------------- | ----------------- | ------------- | ---------- |
 | #22: OH Attack | #23: OH Peak-Time | #24: OH Decay | #25: Level |
 
 
@@ -55,8 +55,8 @@ Notes:
 
 
 | #20: cc1 | #21: cc2 | #22: cc3 | #23: cc3 |
-| ------------ | ------------ | ------------ | ------------ |
-|              |              |              |              |
+| -------- | -------- | -------- | -------- |
+|          |          |          |          |
 
 
 
@@ -69,23 +69,23 @@ because the pulse2 has a lots of midi implementations I have a few tracks assign
 ### envelopes
 
 | #14: VCF Attack | #15: VCF Decay | #16: VCF Sustain | #17: VCF Release |
-| ------------------- | ------------------ | -------------------- | -------------------- |
+| --------------- | -------------- | ---------------- | ---------------- |
 | #83: VCA Attack | #76: VCA Decay | #77: VCA Sustain | #78: VCA Release |
 
 ### filter
 
 | #50: cutoff   | #56: resonance | #52: env amount | #53: velocity |
-| ----------------- | ------------------ | ------------------- | ----------------- |
+| ------------- | -------------- | --------------- | ------------- |
 | #51: keytrack | #74: loop      | #88: accent     | #49: type     |
 
 ### oscilators
 
-| #45: osc1 level      | #46: osc2 level | #39: osc2 pulsewidth | #47: osc3 level |
-| ------------------------ | ------------------- | ------------------------ | ------------------- |
-| #35: osc1 pulsewidth | #38: shape      | #42: osc3 semitone   | #44: osc3 shape |
+| #45: osc1 level | #46: osc2 level | #39: osc2 pulsewidth | #47: osc3 level |
+| --------------- | --------------- | -------------------- | --------------- |
+| #35: osc1 pulsewidth | #38: shape | #42: osc3 semitone   | #44: osc3 shape |
 
 ### lfo & arpeggio
 
 | #24: lfo1 speed | #25: lfo1 shape | #79: arp active | #80: arp range |
-| ------------------- | ------------------- | ------------------- | ------------------ |
+| --------------- | --------------- | --------------- | -------------- |
 | #26: lfo2 speed | #27: lfo2 delay | #82: arp clock  | #85: arp swing |
