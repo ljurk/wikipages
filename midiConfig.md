@@ -34,6 +34,19 @@ Note:
 | #22: OH Attack | #23: OH Peak-Time | #24: OH Decay | #25: Level |
 
 
+## mfb 503
+
+### snare drum
+
+Notes:
+- SD: 38 OR 60-71
+- HH: 40,44 OR 91,93,95
+- OH: 39,42 OR 90,92,94
+
+| #17: SD Tune   | #19: SD Noise     | #19: SD Decay | #16: SD Level |
+| -------------- | ----------------- | ------------- | ----------    |
+| #57: HH Mix    | #59: HH Decay     | #58: OH Decay | #56: HH Level |
+
 
 ## modular
 
