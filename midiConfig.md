@@ -1,10 +1,3 @@
-# midiConfig
-Some tables in digitakt style for controlling Airbase, Mbase and modular stuff
-
-## airbase
-
-[manual](https://www.jomox.de/upload/manuals/AirBase99_D.pdf)
-
 ### kick
 
 Note: 36(C1)
