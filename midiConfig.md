@@ -1,14 +1,10 @@
-### kick
-
-Note: 36(C1)
+### kick(36|C1)
 
 | #100: Tune      | #101: Pitch | #106: Attack | #102: Decay |
 | --------------- | ----------- | ------------ | ----------- |
 | #103: Harmonics | #105: Noise | #107: EQ     | #115: Level |
 
-### clap
-
-Note: 39(D#1)
+### clap(39|D#1)
 
 | #26: Tune | #27: Attack | #28: Peak-time | #29: Decay |
 | --------- | ----------- | -------------- | ---------- |
@@ -16,7 +12,7 @@ Note: 39(D#1)
 
 ### hihat
 
-Note:
+Notes:
 
 - Open: 46(A#1)
 - Medium: 44(G#1)
@@ -28,8 +24,6 @@ Note:
 
 
 ## mfb 503
-
-### snare drum
 
 Notes:
 - SD: 38 OR 60-71
