@@ -1,3 +1,29 @@
+| #  | input         | output               | mode |
+| -  | -----         | ------               | ---- |
+| 1  | airbase kick  | mixer1               |      |
+| 2  | overdriveOut  | mixer2               |      |
+| 3  | **er1**       | mixer3               |      |
+| 4  | comp1out      | mixer4               |      |
+| 5  | comp2out      | mixer5               |      |
+| 6  | **ea1**       | mixer6               |      |
+| 7  | **modular**   | mixer7               |      |
+| 8  | **mfb503**    | mixer8               |      |
+| 9  | AirbaseMainL  | mixer9               |      |
+| 10 | AirbaseMainR  | mixer10              |      |
+| 11 | **digitaktL** | mixer11              |      |
+| 12 | **digitaktR** | mixer12              |      |
+| 13 | mam fb383     | distortionIn         |      |
+| 14 | distortionOut | delayIn              |      |
+| 15 | delayOut      | comp1in              |      |
+| 16 | filterbankOut | comp2in              |      |
+| 17 | **mbase**     | overdriveIn          | thru |
+| 18 | -             | compressor1sidechain | thru |
+| 19 | -             | compressor2sidechain | thru |
+| 20 | **#9**        | filterbankIn         |      |
+| 21 | -             | filterbankFmIn       |      |
+| 22 | -             | filterbankAmIn       |      |
+| 23 | -             | -                    |      |
+
 ### kick(36|C1)
 
 | #100: Tune      | #101: Pitch | #106: Attack | #102: Decay |
@@ -35,57 +61,3 @@ Notes:
 | #57: HH Mix    | #59: HH Decay     | #58: OH Decay | #56: HH Level |
 
 
-## modular
-
-see: [midi2cv](https://github.com/ljurk/midi2cv)
-
-Notes:
-
-- channel: 2
-
-  - G1: 0(C0)
-  - G2: 1(C#0)
-  - G3: 2(D0)
-  - G4: 3(D#0)
-
-- channel: 1
-
-  - listens to all notes, outputs v/oct
-
-
-
-| #20: cc1 | #21: cc2 | #22: cc3 | #23: cc3 |
-| -------- | -------- | -------- | -------- |
-|          |          |          |          |
-
-
-
-## waldorf pulse 2
-
-[manual](https://support.waldorfmusic.com/files/Pulse%202/Manuals/Pulse_2_Handbuch.pdf)
-
-because the pulse2 has a lots of midi implementations I have a few tracks assigned to it to controll more than 8 values
-
-### envelopes
-
-| #14: VCF Attack | #15: VCF Decay | #16: VCF Sustain | #17: VCF Release |
-| --------------- | -------------- | ---------------- | ---------------- |
-| #83: VCA Attack | #76: VCA Decay | #77: VCA Sustain | #78: VCA Release |
-
-### filter
-
-| #50: cutoff   | #56: resonance | #52: env amount | #53: velocity |
-| ------------- | -------------- | --------------- | ------------- |
-| #51: keytrack | #74: loop      | #88: accent     | #49: type     |
-
-### oscilators
-
-| #45: osc1 level | #46: osc2 level | #39: osc2 pulsewidth | #47: osc3 level |
-| --------------- | --------------- | -------------------- | --------------- |
-| #35: osc1 pulsewidth | #38: shape | #42: osc3 semitone   | #44: osc3 shape |
-
-### lfo & arpeggio
-
-| #24: lfo1 speed | #25: lfo1 shape | #79: arp active | #80: arp range |
-| --------------- | --------------- | --------------- | -------------- |
-| #26: lfo2 speed | #27: lfo2 delay | #82: arp clock  | #85: arp swing |
