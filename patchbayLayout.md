@@ -24,3 +24,6 @@
 | 22 | -             | compressor1sidechain |      |
 | 23 | -             | compressor2sidechain |      |
 | 24 | -             | -                    |      |
+
+
+You can download a printable template [here](/PX3000.doc)
