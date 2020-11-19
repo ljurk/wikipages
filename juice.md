@@ -1,0 +1,25 @@
+# How elecrticity flows inside my home
+
+- main out 1
+    - outlet1(switch per output)
+        - outlet1.1
+            - pc
+            - monitor1
+            - monitor2
+            - usb hub
+        - outlet1.2
+            - nas
+            - modem
+            - router
+        - amp
+        - outlet1.3
+            - outlet1.3.1
+                - mixer
+                - airbase
+                - filterbank
+                - mam
+                - 9v splitter
+                - mfb503
+                - compressor
+            - behringer crave
+            - modular system

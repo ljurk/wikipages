@@ -40,6 +40,10 @@
 
 [patchbayLayout](patchbayLayout)
 
+# misc
+
+[juice](juice)
+
 # random
 
 [asciiArt](asciiArt)
