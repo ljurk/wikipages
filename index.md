@@ -44,6 +44,8 @@
 
 [juice](juice)
 
+[cv](cv)
+
 # random
 
 [asciiArt](asciiArt)
